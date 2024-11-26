@@ -2,9 +2,9 @@ SELECT
   c.id,
   c.name,
   c.email,
-  min(o.created_at) AS first_order_at,
+  MIN(o.created_at) AS first_order_at,
   COUNT (DISTINCT o.id) AS number_of_orders
-  sum(`analytics-engineers-club.coffee_shop.orders`.total) as total_order_value
+  SUM(`analytics-engineers-club.coffee_shop.orders`.total) as total_order_value
 FROM 
   `analytics-engineers-club.coffee_shop.orders` o
 INNER JOIN
