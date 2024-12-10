@@ -2,7 +2,12 @@ version: 2
  
 models:
   - name: customers
-    description: Cleaned up data of our customers
+    description: > 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida eleifend urna, in volutpat nisi maximus quis. In egestas, urna sit amet finibus euismod, dolor tortor rutrum dolor, eget dignissim urna arcu id lectus. Mauris est felis, tempor at malesuada a, interdum ac nunc. Donec eleifend orci velit, in dapibus lacus finibus eget. Aliquam ac diam pretium, lobortis tortor facilisis, sodales erat. Nulla tincidunt tellus ut justo tincidunt, sit amet porttitor sapien luctus. Etiam suscipit commodo mi eget interdum. Quisque risus dui, commodo a ipsum sit amet, dictum malesuada elit. Curabitur blandit urna id tellus dignissim efficitur. Donec a tellus ut mi consequat ultrices id vitae massa. Sed convallis enim sit amet odio gravida malesuada. Sed vulputate lacus in nibh bibendum lobortis. Nunc arcu turpis, efficitur sed ultricies mollis, vestibulum scelerisque felis. Fusce et convallis magna, id porttitor felis.
+      Cras ipsum ex, egestas tempus pulvinar sed, accumsan ut ipsum. Nulla facilisi. Suspendisse faucibus venenatis semper. Nunc condimentum laoreet ullamcorper. Ut blandit vehicula lorem, ut bibendum diam cursus sit amet. Vivamus est sapien, luctus consectetur tellus at, interdum suscipit magna. In molestie quam sed vehicula gravida. Vivamus venenatis eu tortor tincidunt pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam turpis ante, consectetur sit amet feugiat sed, iaculis a nulla. Integer blandit urna nunc, vel finibus odio venenatis quis. Mauris mollis, dolor sit amet suscipit venenatis, sapien erat ullamcorper massa, et ornare mi ligula nec risus. Integer in tortor id massa consectetur hendrerit. Donec semper, lacus ut auctor ornare, nulla diam bibendum arcu, eget volutpat massa ex sed orci.
+      Maecenas tempor justo non dolor vulputate vestibulum. Maecenas efficitur, nulla vel eleifend pulvinar, est mauris iaculis velit, ut imperdiet tellus tortor eu urna. Maecenas ornare eu urna ac porttitor. Aliquam vulputate et risus ut maximus. Suspendisse sit amet lorem arcu. Donec nunc orci, venenatis et ipsum vitae, lobortis laoreet sapien. Cras at nisi quis arcu tempor egestas sit amet sit amet lorem. Duis elementum arcu non blandit commodo. Fusce viverra venenatis iaculis. Donec feugiat finibus elit sit amet lacinia. Maecenas dignissim laoreet est, ut sagittis massa imperdiet placerat. Integer molestie imperdiet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor felis nulla, sit amet pharetra turpis imperdiet ac.
+      Duis tincidunt purus ex, id egestas diam aliquam sit amet. Duis in enim at tortor ultricies pharetra. Etiam eget quam eu odio scelerisque facilisis. Aliquam vitae nunc euismod, ullamcorper lacus vel, tincidunt ante. Donec non sollicitudin leo. Sed pulvinar, lacus eget mattis pulvinar, purus arcu tincidunt neque, et iaculis est massa quis nisi. Mauris lobortis felis vel nibh ultrices, eu tincidunt dolor pharetra.
+      Nullam sit amet risus justo. Donec non mi nec enim cursus porttitor ut vitae ex. Pellentesque diam magna, imperdiet sit amet felis non, mattis venenatis lorem. Nulla facilisi. Morbi scelerisque in turpis ut tincidunt. Sed ac placerat lorem. Ut varius urna et tincidunt tempus. Praesent aliquet blandit sapien, a ornare tortor feugiat quis. Cras semper tortor in nibh venenatis efficitur. Donec vel ligula eu risus mattis suscipit. Suspendisse vel dui ac urna molestie eleifend. In tincidunt est ac augue gravida congue.
     columns:
       - name: id
         description: Primary key of the model
@@ -29,5 +34,6 @@ models:
           - not_null
       - name: total_order_value
         description: Amount of total money spent by a customer
-        
+        tests:
+          - not_null
          
