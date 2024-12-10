@@ -23,13 +23,11 @@ models:
           - unique
           - not_null
       - name: number_of_orders
-        description: Primary key of the model
+        description: Number of orders the customer has made with our company
         tests:
           - unique
           - not_null
       - name: total_order_value
-        description: Primary key of the model
-        tests:
-          - unique
-          - not_null
+        description: Amount of total money spent by a customer
+        
          
