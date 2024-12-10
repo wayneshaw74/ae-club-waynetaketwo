@@ -1,0 +1,35 @@
+version: 2
+ 
+models:
+  - name: customers
+    description: Cleaned up data of our customers
+    columns:
+      - name: id
+        description: Primary key of the model
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: Name of customer making a purchase
+        tests:
+          - not_null
+      - name: email
+        description: Email used by customer to make the purchase
+        tests:
+          - not_null
+      - name: first_order_at
+        description: First time the customer ordered a product
+        tests:
+          - unique
+          - not_null
+      - name: number_of_orders
+        description: Primary key of the model
+        tests:
+          - unique
+          - not_null
+      - name: total_order_value
+        description: Primary key of the model
+        tests:
+          - unique
+          - not_null
+         
